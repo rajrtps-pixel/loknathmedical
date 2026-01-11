@@ -1,0 +1,27 @@
+{
+  "name": "loknath-medical",
+  "version": "1.0.0",
+  "description": "A full-stack website for Loknath Medical store and clinic.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "init-db": "node -e \"const db = require('./database/database.js').init();\""
+  },
+  "keywords": [
+    "medical",
+    "clinic",
+    "express",
+    "sqlite"
+  ],
+  "author": "Gemini",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
