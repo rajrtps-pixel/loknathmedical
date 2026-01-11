@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Loknath Medical</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Loknath Medical</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="patient-registration.html">Patient Registration</a></li>
+                <li><a href="appointment.html" class="active">Book Appointment</a></li>
+                <li><a href="admin/">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="section">
+                <h1 class="section-title">Book an Appointment</h1>
+                <div class="form-container">
+                    <form id="appointment-form">
+                        <div id="message-container"></div>
+
+                        <div class="form-group">
+                            <label for="patient-mobile">Your Mobile Number</label>
+                            <input type="tel" id="patient-mobile" name="patient_mobile" required placeholder="Enter mobile used during registration">
+                            <small>We use this to find your patient record.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="doctor">Select Doctor</label>
+                            <select id="doctor" name="doctor_id" required>
+                                <option value="" disabled selected>Loading doctors...</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="appointment-date">Preferred Appointment Date</label>
+                            <input type="date" id="appointment-date" name="appointment_date" required>
+                        </div>
+
+                        <div id="doctor-timing-info" class="message info hidden"></div>
+                        
+                        <button type="submit" class="btn btn-block">Book Appointment</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Loknath Medical. All Rights Reserved.</p>
+            <p>Contact us: (123) 456-7890 | info@loknathmedical.com</p>
+        </div>
+    </footer>
+
+    <script src="js/appointment.js"></script>
+</body>
+</html>

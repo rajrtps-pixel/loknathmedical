@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration - Loknath Medical</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Loknath Medical</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="patient-registration.html" class="active">Patient Registration</a></li>
+                <li><a href="appointment.html">Book Appointment</a></li>
+                <li><a href="admin/">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="section">
+                <h1 class="section-title">New Patient Registration</h1>
+                <div class="form-container">
+                    <form id="patient-registration-form">
+                        <div id="message-container"></div>
+
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" required min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number</label>
+                            <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="problem_details">Problem Details</label>
+                            <textarea id="problem_details" name="problem_details"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-block">Register</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Loknath Medical. All Rights Reserved.</p>
+            <p>Contact us: +91-9431169122 | info@loknathmedical.com</p>
+        </div>
+    </footer>
+
+    <script src="js/patient.js"></script>
+</body>
+</html>
